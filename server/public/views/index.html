@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Fruit Market</title>
+    <script src="/vendors/angular/angular.min.js" type="text/javascript"></script>
+    <script src="/assets/scripts/app.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>Fruit Market</h1>
+    <div ng-controller="MainController">
+      <div ng-repeat="fruit in fruitMarket">
+          <h3>{{ fruit.name }}</h3>
+          <button ng-click="buyFruit(fruit)">Buy</button>
+          <button>Sell</button>
+      </div>
+
+    </div>
+  </body>
+</html>
